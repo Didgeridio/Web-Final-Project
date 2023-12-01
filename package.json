@@ -1,8 +1,10 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.3.5"
-  },
+  "name": "WebFinalProject",
+  "version": "1.0.0",
   "dependencies": {
     "flowbite": "^2.2.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
   }
 }
