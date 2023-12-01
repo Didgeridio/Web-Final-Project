@@ -7,18 +7,56 @@ main {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
-
 
 .main-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 80px;
     margin-bottom: 60px;
 }
 
+.main-grid article {
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-grid article div,
+.card {
+    background-color: #1a202c;
+    border: 1px solid #2d3748;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.main-grid article:hover div,
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.article-link, .card-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card {
+    flex: 1 1 calc(50% - 16px);
+    background-color: #F6F4EB;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 16px;
+}
 
 article h2,
 article p {
@@ -30,6 +68,7 @@ article p {
     margin-bottom: 20px;
     text-align: center;
 }
+
 .contact-page-container {
     display: flex;
     flex-direction: column;
@@ -38,12 +77,10 @@ article p {
     height: 100vh;
 }
 
-/* Tables styling */
 .table-container {
     overflow-x: auto;
     align-items: center;
 }
-
 
 .main-table {
     width: 100%;
@@ -52,6 +89,11 @@ article p {
     white-space: nowrap;
 }
 
+header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 .main-table th {
     background-color: #f2f2f2;
@@ -59,25 +101,22 @@ article p {
     text-align: left;
 }
 
-
 .main-table td,
 .main-table th {
     border: 1px solid #dddddd;
     padding: 12px;
 }
 
-
 .main-table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-
 @media (min-width: 768px) {
     .main-grid {
         grid-template-columns: repeat(2, 1fr);
-        
     }
 }
+
 @media (max-width: 767px) {
     .main-grid {
         margin-top: 50px;
