@@ -72,20 +72,18 @@ article p {
 .wireframe-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 150px); 
+    grid-template-rows: repeat(2, auto); 
     gap: 10px; 
-    margin: 20px;
 }
 .wireframe-item {
-    background-color: #eee;
-    border: 1px solid #ddd;
-    padding: 20px;
+    background-color: transparent;
+    border: 1px solid transparent;
     text-align: center;
 }
 .wireframe-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .contact-page-container {
@@ -148,5 +146,9 @@ header h2 {
     .table th,
     .table td {
         white-space: nowrap;
+    }
+    .wireframe-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto); 
     }
 }
