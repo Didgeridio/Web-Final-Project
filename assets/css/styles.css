@@ -8,6 +8,7 @@ main {
     margin: auto;
     padding: 20px;
     margin-top: 30px;
+    margin-bottom: 190px;
 }
 
 .main-grid {
@@ -67,6 +68,24 @@ article p {
     font-size: 24px;
     margin-bottom: 20px;
     text-align: center;
+}
+.wireframe-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px); 
+    gap: 10px; 
+    margin: 20px;
+}
+.wireframe-item {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+.wireframe-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .contact-page-container {
