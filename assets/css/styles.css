@@ -157,4 +157,9 @@ header h2 {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto); 
     }
+    .accordion-columns {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
 }
