@@ -18,7 +18,7 @@
     <header>
         <!-- Navigation and Header -->
         <nav class="bg-white border-gray-200 dark:bg-gray-900">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <section class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                   <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
                   <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Web Portfolio</span>
@@ -29,7 +29,7 @@
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
                   </svg>
               </button>
-              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+              <section class="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
                     <a href="index.html" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
@@ -50,8 +50,7 @@
                     <a href="samples.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sample Projects</a>
                   </li>
                 </ul>
-              </div>
-            </div>
+            </section>
           </nav>
     </header>
 <main>
@@ -59,7 +58,7 @@
         <h2 class="text-2xl font-bold mx-auto text-center m-4 pl-3">Project Samples</h2>
     </header>
     <!-- Sample Projects Main Area -->
-    <div id="accordion-flush" data-accordion="collapse" data-active-classes="text-black" data-inactive-classes="text-gray-500 dark:text-gray-400">
+    <article id="accordion-flush" data-accordion="collapse" data-active-classes="text-black" data-inactive-classes="text-gray-500 dark:text-gray-400">
         <h2 id="accordion-flush-heading-1">
         <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
             <span>Project 1 - Mobile Application</span>
@@ -68,18 +67,18 @@
             </svg>
         </button>
         </h2>
-        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
-            <section class="accordion-columns">
-                <p class="mb-2 text-gray-500 dark:text-gray-400">I designed a multiplatform mobile application using MAUI. <br>
-                    The application uses the API of a popular MMO to allow the user to track marketboard prices and get alerts when items drop below their tracked price.<br>
-                    It also allows the user to load and save profiles, as well as change the theme from light to dark and set the search language from ENG to JP.<br>
-                    It is coded using MVVM principles following the official Microsoft guidelines.<br>
-                </p>
-                <img src="assets/img/mobile_app_image.png" style="width: 25%; height: auto;">
-            </section>
-        </div>
-        </div>
+        <article id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+            <article class="py-5 border-b border-gray-200 dark:border-gray-700">
+                <section class="accordion-columns">
+                    <p class="mb-2 text-gray-500 dark:text-gray-400">I designed a multiplatform mobile application using MAUI. <br>
+                        The application uses the API of a popular MMO to allow the user to track marketboard prices and get alerts when items drop below their tracked price.<br>
+                        It also allows the user to load and save profiles, as well as change the theme from light to dark and set the search language from ENG to JP.<br>
+                        It is coded using MVVM principles following the official Microsoft guidelines.<br>
+                    </p>
+                    <img src="assets/img/mobile_app_image.png" style="width: 25%; height: auto;">
+                </section>
+            </article>
+        </article>
         <h2 id="accordion-flush-heading-2">
         <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
             <span>Project 2 - Python Text Game</span>
@@ -88,8 +87,8 @@
             </svg>
         </button>
         </h2>
-        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <article id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+            <section class="py-5 border-b border-gray-200 dark:border-gray-700">
                 <section class="accordion-columns">
                     <p class="mb-2 text-gray-500 dark:text-gray-400">I designed a Python text based RPG designed to be played on terminal. <br>
                         It follows the player as they navigate their office, trying not to get fired after forgetting the Sales Report for their boss.<br>
@@ -98,8 +97,8 @@
                     </p>
                     <img src="assets/img/python_project_image.png" style="width: 60%; height: auto;">
                 </section>
-            </div>
-        </div>
+            </section>
+        </article>
         <h2 id="accordion-flush-heading-3">
         <button type="button" class="flex items-center justify-between w-full py-5 font-medium rtl:text-right text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400 gap-3" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
             <span>Project 3 - Ethical Pursuits</span>
@@ -108,8 +107,8 @@
             </svg>
         </button>
         </h2>
-        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-        <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+        <section id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+        <article class="py-5 border-b border-gray-200 dark:border-gray-700">
             <section class="accordion-columns">
                 <p class="mb-2 text-gray-500 dark:text-gray-400">I have studied Ethics throughout the semester.<br>
                     Completing many KBAs and even a presentation on the predicament of the company Data Mule.<br>
@@ -117,13 +116,13 @@
                 </p>
                 <img src="assets/img/ethics.jpg" style="width: 50%; height: auto;">
             </section>
-        </div>
-    </div>
+        </article>
+    </article>
 </main>
 <!-- Footer -->
 <footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between hidden sm:flex">
+    <article class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <section class="sm:flex sm:items-center sm:justify-between hidden sm:flex">
             <a href="index.html" class="flex items-center mb-4 sm:mb-0">
                 <img src="https://placehold.co/64?text=logo" class="h-8 mr-3" alt="Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Web Portfolio</span>
@@ -148,10 +147,10 @@
                     <a href="samples" class="mr-4 hover:underline md:mr-6 ">Sample Projects</a>
                 </li>
             </ul>
-        </div>
+        </section>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 hidden sm:flex" />
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© Copyright 2023 Joshua Pope. All rights reserved.</span>
-    </div>
+    </article>
 </footer>
 <script type="module" src="../node_modules/flowbite/dist/flowbite.js"></script>
 <script type="module" src="assets/js/scripts.js"></script>
