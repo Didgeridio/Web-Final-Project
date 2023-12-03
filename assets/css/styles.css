@@ -127,6 +127,12 @@ header h2 {
 .main-table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
+.accordion-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
 
 @media (min-width: 768px) {
     .main-grid {
