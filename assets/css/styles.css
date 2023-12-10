@@ -162,4 +162,8 @@ header h2 {
         flex-direction: column;
         gap: 5px;
       }
+      #navbarDropdown {
+        display: block;
+        position: absolute;
+      }
 }

@@ -4,10 +4,9 @@ module.exports = {
       'index.html',
       'contact.html',
       'resume.html',
-      'projects.html',
-      'mywork.html',
+      'project.html',
+      'samples.html',
       'about.html',
-      "./node_modules/flowbite/**/*.js"
 ],
   theme: {
       extend: {
@@ -20,7 +19,4 @@ module.exports = {
           },
       },
   },
-  plugins: [
-    require('flowbite/plugin')
-]
 }
