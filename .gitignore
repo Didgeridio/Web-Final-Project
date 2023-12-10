@@ -11,5 +11,5 @@ yarn.lock
 yarn-error.log
 types/generated/*.d.ts
 /node_modules
-/idea
+/.idea
 .turbo

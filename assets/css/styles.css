@@ -145,25 +145,36 @@ header h2 {
         margin-top: 50px;
         gap: 5px;
     }
-    .table {
+
+    .table-container {
         overflow-x: auto;
     }
 
-    .table th,
-    .table td {
-        white-space: nowrap;
+    .main-table {
+        width: 100%;
+        border-collapse: collapse;
     }
+
+    .main-table th,
+    .main-table td {
+        white-space: normal; 
+        max-width: 100%; 
+        word-break: break-word; 
+    }
+
     .wireframe-container {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto); 
     }
+
     .accordion-columns {
         display: flex;
         flex-direction: column;
         gap: 5px;
-      }
-      #navbarDropdown {
+    }
+
+    #navbarDropdown {
         display: block;
         position: absolute;
-      }
+    }
 }
