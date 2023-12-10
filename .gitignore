@@ -10,14 +10,6 @@
 yarn.lock
 yarn-error.log
 types/generated/*.d.ts
-
+/node_modules
+/idea
 .turbo
-
-# Perf related files
-isolate*.log
-
-# Generated files
-/src/corePluginList.js
-
-# Generated files during tests
-/tests/evaluate-tailwind-functions.test.html
